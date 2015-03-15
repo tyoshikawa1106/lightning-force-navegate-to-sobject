@@ -1,0 +1,17 @@
+<aura:component >
+    <aura:attribute name="item" type="account" />
+    <aura:attribute name="index" type="Integer" />
+    <tr>
+        <td class="indexCol">{!v.index}</td>
+        <td>{!v.item.Name}</td>
+        <td class="btnCol">
+            <ui:button label="Detail" press="{!c.gotoDetail}" />
+        </td>
+        <td class="btnCol">
+            <ui:button label="Chatter" press="{!c.gotoChatter}" />
+        </td>
+        <td class="btnCol">
+            <ui:button label="Related " press="{!c.gotoRelated}" />
+        </td>
+    </tr>
+</aura:component>
